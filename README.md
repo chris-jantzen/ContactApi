@@ -10,6 +10,7 @@ Typescript contact api using express and mongoDB
 #### POST -> add a new contact with the following structure<br>
 
 ```javascript
+  {
     firstName: {
       type: String,
       required: 'Enter a first name'
@@ -31,6 +32,7 @@ Typescript contact api using express and mongoDB
       type: Date,
       default: Date.now
     }
+  }
 ```
 
 ### /contact/contact:id
