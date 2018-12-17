@@ -1,13 +1,14 @@
 # ContactApi
+
 Typescript contact api using express and mongoDB
 
 ## Routes
 
-### /contact
+### http://localhost:3000/contact
 
 #### GET -> get all contacts <br><br>
 
-#### POST -> add a new contact with the following structure<br>
+#### POST -> add a new contact<br>
 
 ```javascript
   {
@@ -35,7 +36,16 @@ Typescript contact api using express and mongoDB
   }
 ```
 
-### /contact/contact:id
+| Property  | Is Required | Description |
+| --------- |:-----------:|------------ |
+| firstName | true | The contact's first name. |
+| lastName | true | The contact's last name. |
+| email | false | The contact's email address. |
+| company | false | The company the contact works for. |
+| phone | false | The contact's phone number. |
+| created_date | false | The date the contact card was created.<br>(Defaults to the time of the request)|
+
+### http://localhost:3000/contact/contact:id
 
 #### GET -> get account with an id<br><br>
 
