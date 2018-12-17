@@ -1,0 +1,27 @@
+{
+  "name": "testapi",
+  "version": "1.0.0",
+  "description": "test api using typescript and express",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start",
+    "quicktest": "ts-node ./lib/controllers/crmController.ts"
+  },
+  "author": "Chris Jantzen",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/mongoose": "^5.3.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
