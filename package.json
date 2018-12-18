@@ -7,8 +7,7 @@
     "build": "tsc",
     "dev": "ts-node ./lib/server.ts",
     "start": "nodemon ./dist/server.js",
-    "prod": "npm run build && npm run start",
-    "quicktest": "ts-node ./lib/controllers/crmController.ts"
+    "prod": "npm run build && npm run start"
   },
   "author": "Chris Jantzen",
   "license": "MIT",
