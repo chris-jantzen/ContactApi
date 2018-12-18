@@ -1,12 +1,13 @@
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as mongoose from 'mongoose'
-import { Routes } from "./routes/crmRoutes";
+import { Routes } from './routes/crmRoutes';
+import { keys } from './config/config';
 
 class App {
   public app: express.Application;
   public routePrv: Routes = new Routes();
-  public mongoUrl: string = 'mongodb://chris:chris12345@ds037758.mlab.com:37758/test_restful_api';
+  public mongoUrl: string = keys.mongoUrl;
 
   constructor() {
     this.app = express();
