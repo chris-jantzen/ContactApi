@@ -11,6 +11,10 @@
   },
   "author": "Chris Jantzen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jantzeca/ContactApi"
+  },
   "dependencies": {
     "@types/express": "^4.16.0",
     "@types/mongoose": "^5.3.5",
